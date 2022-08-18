@@ -1,6 +1,150 @@
+header, main, div, ul {
+    border: 1px red dotted;
+}
+
 /* default settings */
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+}
+
+/* header div */
+header {
+    background-color: rgb(158,197,249);
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    list-style: none;
+}
+
+li > a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+/* body upper */
+
+main { 
+    width: 90%;
+    margin: 10px auto;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 3px black;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.scale p {
+    font-size: 20px;
+}
+
+select {
+    font-size: 18px;
+}
+
+/* body middle */
+img.weather {
+    border-radius: 50%;
+    width: 150px;
+    margin: 10px;
+}
+
+.tempuratures {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-box {
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.temp-ranges {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.temp-ranges > h3 {
+    font-size: 25px;
+}
+
+.high {
+    color: rgb(207,42,39);
+}
+
+.low {
+    color: rgb(44,120,228);
+}
+
+.day {
+    font-size: 30px;
+}
+
+/* body footer/cookie button */
+
+footer {
+    width: 90%;
+    margin: 10px auto;
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    background-color: #EEEEEE;
+}
+
+img.cookie {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.cookie-content {
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    flex: 3;
+}
+
+.cookie-content button {
+    flex: 1;
+    width: 10%;
+    height: 20px;
 }
