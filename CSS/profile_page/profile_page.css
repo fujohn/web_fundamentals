@@ -1,0 +1,231 @@
+/* for visualization purposes */
+
+/* image reshape */
+.icons-s {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.button {
+    height: 30px;
+    margin: 0px 5px;
+}
+
+.profile-user {
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 5px gray solid;
+}
+
+.profile-other {
+    height:50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* default reset */
+* {
+    padding:0px;
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px auto
+}
+
+header, main {
+    padding: 0px 100px;
+}
+
+
+/* nav bar layout */
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 80px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links p {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+input {
+    background-color: rgb(0, 175, 175);
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+/* general body layout */
+main, .top, .person {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    flex: 2;
+    margin-right: 30px;
+}
+
+.right {
+    flex: 1;
+    margin-left: 30px;
+}
+
+/* general card layouts */
+.user, .education, .requests, .connections-list {
+    margin: 20px 0px;
+}
+
+.top {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    justify-content: flex-start;
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.top .title {
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* left vertical flex sections layout */
+.user div, .education div {
+    padding: 0px 50px;
+}
+
+.left .content {
+    padding: 10px 50px;
+}
+
+/* right vertical flex sections layout */
+.content, .bottom{
+    border: 3px solid darkgray;
+    border-top: white;
+    padding: 20px 20px;
+}
+
+.top .number {
+    background-color: darkgray;
+    color: black;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.person {
+    padding: 10px 0px;
+    font-size: 25px;
+}
+
+.right .title {
+    margin-left: 10px;
+}
+
+
+/* user card section */
+.user-top {
+    background-color: rgb(0, 175, 175);
+    height: 200px;
+    }
+
+.user .content {
+    padding-top: 120px;
+}
+
+#location {
+    padding-top: 5px;
+    margin: 5px auto;
+}
+
+.user p {
+    font-size: 23px;
+    margin: 5px auto
+}
+
+.user a {
+    font-size: 23px;
+    margin: 50px auto;
+}
+
+
+/* education section */
+.education h3 {
+    margin-bottom: 5px;
+}
+
+.education .content h4 {
+    margin-bottom: 20px;
+    color: rgb(119, 119, 119);
+    font-weight: 400;
+}
+
+.education p {
+    font-size: 23px;
+}
+
+
+/* connections request section */
+.request {
+    display: flex;
+    justify-content: space-between;
+}
+
+.response {
+    display: flex;
+    align-items: center;
+}
+
+.requests .number {
+    padding: 0px 7px;
+}
+
+/* connections section */
+.bottom {
+    font-size: 25px;
+}

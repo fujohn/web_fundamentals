@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+}
+.col {
+    flex: 1; /*this is the ratio which represents the weight for space in div, so sum of flex/all elements*/
+    padding: 20px;
+    margin: 10px;
+    background-color: lightcyan;
+}
+
+.col-2 {
+    flex: 3;
+    padding: 20px;
+    margin: 10px;
+    background-color: palegreen;
+}
+

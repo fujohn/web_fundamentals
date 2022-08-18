@@ -1,0 +1,212 @@
+/* visualizer
+.request, .person {
+    border: 1px dotted red;
+} */
+
+/* default */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.profile-medium {
+    height: 150px;
+    margin-left: 20px;
+    border: 5px solid #CCCCCC;
+    margin-top: 100px;
+}
+
+.profile-small {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.icons-small {
+    height: 28px;
+    margin-right: 5px;
+}
+
+.icons-medium {
+    height: 50px;
+}
+
+/* nav-bar customization */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    padding: 10px 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+ul {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+li button {
+    font-size: 23px;
+    color: white;
+    background-color: rgb(23,162,184);
+    box-shadow: 3px 3px 2px 2px black;
+    padding: 5px 10px;
+}
+
+
+/* main section layouts */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 40px auto;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    margin-bottom: 40px;
+}
+
+.left {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 20px;
+    border: #CCCCCC 3px solid;
+    border-top: white;
+}
+
+.top {
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    height: 30px
+}
+
+.section-title {
+    color: white;
+    padding-left: 20px;
+}
+
+.number {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+.person, .request {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bottom {
+    border: 3px #CCCCCC solid;
+    border-top: white;
+    padding: 20px 20px;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(8,83,148);
+    margin: 5px 0px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* profile specs */
+#profile h1 {
+    color: black;
+}
+
+#profile .top {
+    height: 90px;
+    background-color: rgb(23,162,184);
+}
+
+#profile .content {
+    padding-top: 80px;
+}
+
+#profile h2 {
+    margin: 10px 0px;
+    vertical-align: top;
+}
+
+/* Education Box */
+#education .content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#education h3 {
+    font-size: 20px;
+    color: #7C7C7C;
+    margin-bottom: 10px;
+}
+
+/* profile and image */
+.person {
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.person h4 {
+    font-size: 25px;
+}
+
+.response {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}

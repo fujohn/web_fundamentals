@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- starting from the black bar on top -->
+    <header>
+        <div class="links">
+            <p>Profile</p>
+            <ul>
+                <li><a href="https://www.codingdojo.com/">Home</a></li>
+                <li><a href="profile_page.html">My Profile</a></li>
+                <li><a href="https://www.linkedin.com/">Find Connections</a></li>
+            </ul>
+        </div>
+        <input type="button" value="Sign Out">
+    </header>
+    <!-- white section below top bar -->
+    <main>
+        <!-- User Card section -->
+        <div class="left">
+            <div class="user">
+                <!-- top blue part -->
+                <div class="user-top">
+                    <img src="icons/jane-m.jpg" alt="user profile picture" class="profile-user">
+                </div>
+                <!-- body part -->
+                <div class="content">
+                    <h1>Jane Doe</h1>
+                    <h3 id="location">
+                        <img src="icons/map-marker.png" alt="location pin" class="icons-s">
+                        Seattle
+                    </h3>
+                    <p>
+                        Developer | Engineer | Problem Solver <br>
+                        Master of shadows and the Internet!
+                    </p>
+                    <a href=""><img src="icons/gear.png" alt="gear icon" class="icons-s">edit profile</a>
+                </div>
+            </div>
+            <!-- education box -->
+            <div class="education">
+                <div class="top">
+                    <h4 class="title">Education</h4>
+                </div>
+                <!-- if there are more than 1 edu entries, copy content div -->
+                <div class="content">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <h4>Dec 2019 - Mar 2020</h4>
+                    <p>Triple black belt in Python, MERN, and Java.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- connection requests -->
+            <div class="requests">
+                <div class="top">
+                    <h4 class="number">2</h4>
+                    <h4 class="title">Connection Requests</h4>
+                </div>
+                <div class="content">
+                    <div class="request">
+                        <div class="person">
+                            <img src="icons/todd-s.jpg" alt="todd E" class="profile-other">
+                            <p>Todd E</p>
+                        </div>
+                        <div class="response">
+                            <a href=""><img src="icons/accept-circle.png" alt="accept" class="button"></a>
+                            <a href=""><img src="icons/close-circle.png" alt="accept" class="button"></a>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="person">
+                            <img src="icons/phil-s.jpg" alt="phil K" class="profile-other">
+                            <p>Phil K</p>
+                        </div>
+                        <div class="response">
+                            <a href=""><img src="icons/accept-circle.png" alt="accept" class="button"></a>
+                            <a href=""><img src="icons/close-circle.png" alt="accept" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- your current connections -->
+            <div class="connections-list">
+                <div class="top">
+                    <h4 class="number">500+</h4>
+                    <h4 class="title">Your Connections</h4>
+                </div>
+                <div class="content">
+                    <div class="person">
+                        <img src="icons/adrien-s.jpg" alt="adrien D" class="profile-other">
+                        <p>Adrien D</p>
+                    </div>
+                    <div class="person">
+                        <img src="icons/anne-s.jpg" alt="anne J" class="profile-other">
+                        <p>Anne J</p>
+                    </div>
+                    <div class="person">
+                        <img src="icons/alayne-s.jpg" alt="Alayne T" class="profile-other">
+                        <p>Alayne T</p>
+                    </div>
+                    <div class="person">
+                        <img src="icons/arry-s.jpg" alt="Arry Y" class="profile-other">
+                        <p>Arry Y</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="https://www.linkedin.com/">View More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

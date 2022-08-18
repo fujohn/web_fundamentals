@@ -1,0 +1,40 @@
+/* make all images the same size first */
+h1 {
+    text-align: center;
+    margin: 0px auto;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: darkslategrey;
+}
+
+img.octocat {
+    height: 200px;
+    margin: 50px
+}
+
+div {
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.blue {
+    background-color: rgba(86, 189, 230, 0.747);
+}
+
+.pink {
+    background-color: rgba(255, 192, 203, 0.452);
+}
+
+.white {
+    background-color: #acacac;
+}
+
+footer {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}

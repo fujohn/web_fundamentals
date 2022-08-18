@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- the navigation bar -->
+    <header>
+        <div class="navbar">
+            <h1>Profile</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button>Sign Out</button></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="box" id="profile">
+                <div class="top">
+                    <img src="icons/jane-m.jpg" alt="Jane Doe" class="profile-medium">
+                </div>
+                <div class="content">
+                    <h1>Jane Doe</h1>
+                    <h2>
+                        <img src="icons/map-marker.png" alt="map marker" class="icons-small">
+                        Seattle
+                    </h2>
+                    <p>Developer | Engineer | Problem Solver <br>
+                    Master of shadows and the Internet!
+                    </p>
+                    <a href="#" onclick="changeName()"><img src="icons/gear.png" alt="gear icon" class="icons-small">edit profile</a>
+                </div>
+            </div>
+            <div class="box" id="education">
+                <div class="top">
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="content">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h3>Dec 2019 - Mar 2020</h3>
+                    <p>Triple black belt in Python, MERN, and Java...</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="box" id="requests">
+                <div class="top">
+                    <h2 class="number">2</h2>
+                    <h2 class="section-title">Connection Requests</h2>
+                </div>
+                <div class="content">
+                    <div class="request">
+                        <div class="person">
+                            <img src="icons/todd-s.jpg" alt="todd E" class="profile-small">
+                            <h4>Todd E</h4>
+                        </div>
+                        <div class="response">
+                            <a href="#"><img src="icons/accept-circle.png" alt="accept request" class="icons-medium" onclick="acceptRequest(0)"></a>
+                            <a href="#"><img src="icons/close-circle.png" alt="reject request" class="icons-medium" onclick="rejectRequest(0)"></a>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="person">
+                            <img src="icons/phil-s.jpg" alt="Phil K" class="profile-small">
+                            <h4>Phil K</h4>
+                        </div>
+                        <div class="response">
+                            <a href="#"><img src="icons/accept-circle.png" alt="accept request" class="icons-medium" onclick="acceptRequest(1)"></a>
+                            <a href="#"><img src="icons/close-circle.png" alt="reject request" class="icons-medium" onclick="rejectRequest(1)"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="connections">
+                <div class="top">
+                    <h2 class="number">418</h2>
+                    <h2 class="section-title">Your Connections</h2>
+                </div>
+                <div class="content">
+                    <div class="person">
+                        <img src="icons/adrien-s.jpg" alt="Adrien D" class="profile-small">
+                        <h4>Adrien D</h4>
+                    </div>
+                    <div class="person">
+                        <img src="icons/anne-s.jpg" alt="Anne J" class="profile-small">
+                        <h4>Anne J</h4>
+                    </div>
+                    <div class="person">
+                        <img src="icons/alayne-s.jpg" alt="Alayne T" class="profile-small">
+                        <h4>Alayne T</h4>
+                    </div>
+                    <div class="person">
+                        <img src="icons/arry-s.jpg" alt="Arry Y" class="profile-small">
+                        <h4>Arry Y</h4>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS file connection -->
+    <script src="script.js"></script>
+</body>
+</html>

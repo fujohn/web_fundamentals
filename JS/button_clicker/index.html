@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Dojonary</title>
+</head>
+<body>
+    <header>
+        <h1>Dojonary</h1>
+        <input type="text" value="Search">
+        <button class="login" onclick="switchlog(this)">Login</button>
+    </header>
+    <main>
+        <div class="left">
+            <div class="definition">
+                <div class="def-left">
+                    <h2>ninja</h2>
+                    <h4 class="parts_of_speech">noun</h4>
+                    <h5 class="plural">Plural: <em>ninjas</em></h5>
+                    <button class="like" onclick="alert('Ninja was liked')">13 likes</button>
+                </div>
+                <div class="def-right">
+                    <p>A practitioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="definition">
+                <div class="def-left">
+                    <h2>ninja</h2>
+                    <h4 class="parts_of_speech">noun</h4>
+                    <h5 class="plural">Plural: <em>ninjas</em></h5>
+                    <button class="like" onclick="alert('Ninja was liked')">37 likes</button>
+                </div>
+                <div class="def-right">
+                    <p>A <a href="">programmer</a> who breaks down problems with <a href="">zen</a>-like focus</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="custom">
+                <h3>
+                    Dojonary is<br>
+                    defined by <strong>YOU</strong>
+                </h3>
+                <button class="add_def" onclick="hide(this)">Add Definition</button>
+            </div>
+        </div>
+    </main>
+    <script  src="button_clicker.js"></script>
+</body>
+</html>

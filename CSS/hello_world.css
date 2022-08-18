@@ -1,0 +1,46 @@
+/* for class use . and for id use # */
+* {
+    /* selects all elements */
+}
+
+/* 
+selector specificity: smallest is prioritized
+id (#) is the most important
+then class (.)
+then tag itself
+*/
+
+/* select inside a parent tag */
+/* we want to style the p tag inside a div with class "quote" */
+.quote p {
+    color: darkslategrey;
+    font-style: italic;
+}
+
+/* if we only want to style a child, but not all descendants afterwards, do this */
+.header > img {
+    height: 50px;
+}
+
+/* attributes not class or id can be captured as such */
+input {
+    padding: 5px;
+    border-color: rebeccapurple;
+}
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid rebeccapurple;
+}
+input[type="submit"] {
+    color: white;
+    background-color: rebeccapurple;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: baseline;
+
+}

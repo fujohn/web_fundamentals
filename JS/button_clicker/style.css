@@ -1,0 +1,138 @@
+/* visualization aide
+header, main, div {
+    border: 1px dotted red;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* format the divs placement */
+header, main, div {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left, .right, .def-left, .custom{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.left {
+    flex: 2;
+    align-items: flex-start;
+}
+
+.right {
+    flex: 1;
+    align-items: flex-end;
+}
+
+header, .definition  .button{
+    align-items: center;
+}
+
+header, main {
+    margin: 0px 70px 30px;
+}
+
+/* font formatting */
+h1 {
+    margin: 10px 20px;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+h3 strong {
+    font-weight: 1000;
+}
+
+h4 {
+    margin-bottom: 5px;  
+    font-size: 20px;
+    font-style: italic;      
+}
+    
+h5 {
+    margin-bottom: 5px;  
+    font-size: 15px;    
+}
+
+p {
+    font-size: 25px;
+}
+
+button {
+    box-shadow: 3px 3px black;
+    margin:10px 20px;
+    padding: 5px 20px;
+}
+/* header section */
+header {
+    background-color: rgb(170, 170, 170);
+}
+
+header button {
+    background-color: rgb(66, 141, 240);
+    color: white;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(168, 168, 168);
+}
+
+/* definition section */
+.definition {
+    align-items: center;
+    width: 700px;
+    height: 200px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+
+}
+
+.def-left {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.definition button {
+    background-color: gold;
+    font-weight: 700;
+}
+
+/* add definition section */
+.add_def {
+    margin: 10px auto;
+}
+
+.custom {
+    padding: 10px 20px;
+    border: 3px solid black;
+}
+
+.custom button {
+    background-color: rgb(110, 150, 110);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 40px;
+}

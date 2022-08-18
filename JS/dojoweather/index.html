@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <header>
+        <h1>DojoWeather</h1>
+        <ul>
+            <li><a href="#" onclick="alert('Loading weather report...')">Burbank</a></li>
+            <li><a href="#" onclick="alert('Loading weather report...')">Chicago</a></li>
+            <li><a href="#" onclick="alert('Loading weather report...')">Dallas</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="top">
+            <h2>San Jose</h2>
+            <div class="scale">
+                <p>show temperature in </p>
+                <select name="temperature" id="scale" onchange="convertTemps(this)">
+                    <option>&#176;<span>C</span></option>
+                    <option>&#176;<span>F</span></option>
+                </select>
+            </div>
+        </div>
+        <div class="tempuratures">
+            <div class="day-box" id="today">
+                <h3 class="day">Today</h3>
+                <img src="img/some_rain.png" alt="some rain" class="weather">
+                <p>some rain</p>
+                <div class="temp-ranges">
+                    <h3 class="high"><span>24</span>&#176;</h3>
+                    <h3 class="low"><span>18</span>&#176;</h3>
+                </div>
+            </div>
+            <div class="day-box" id="tomorrow">
+                <h3 class="day">Tomorrow</h3>
+                <img src="img/some_sun.png" alt="some sun" class="weather">
+                <p>some sun</p>
+                <div class="temp-ranges">
+                    <h3 class="high"><span>27</span>&#176;</h3>
+                    <h3 class="low"><span>19</span>&#176;</h3>
+                </div>
+            </div>
+            <div class="day-box" id="friday">
+                <h3 class="day">Friday</h3>
+                <img src="img/some_clouds.png" alt="some clouds" class="weather">
+                <p>some clouds</p>
+                <div class="temp-ranges">
+                    <h3 class="high"><span>21</span>&#176;</h3>
+                    <h3 class="low"><span>16</span>&#176;</h3>
+                </div>
+            </div>
+            <div class="day-box" id="saturday">
+                <h3 class="day">Saturday</h3>
+                <img src="img/some_sun.png" alt="some sun" class="weather">
+                <p>some sun</p>
+                <div class="temp-ranges">
+                    <h3 class="high"><span>26</span>&#176;</h3>
+                    <h3 class="low"><span>21</span>&#176;</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/cookie.png" alt="" class="coookie">
+        <div class="cookie-content">
+            <h4>Stop! Cookie time</h4>
+            <div class="message">
+                <p>We use cookies (sadly not the edible ones) to personalize content on ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+                <button onclick="removeMessage()">I accept</button>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+    font-family: "Google Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.nav {
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.nav-title {
+    color: white;
+    font-weight: 200;
+    margin:10px 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+ul {
+    width: 500px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style: none;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    color:white;
+    text-align: center;
+    background-color: rgb(20, 167, 167);
+    height: 30px;
+    width: 80px;
+    box-shadow: 3px 3px black;
+}

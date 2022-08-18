@@ -1,0 +1,61 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.card {
+    margin: 20px 100px;
+
+}
+
+.blue {
+    display: block;
+    background-color: teal;
+    height: 100px;
+}
+
+.card > img {
+    position: absolute;
+    margin: 50px 30px;
+    height:100px;
+}
+
+.white {
+    border-left: solid 4px gray;
+    border-right: solid 4px gray;
+    border-bottom: solid 4px gray;
+    padding: 50px 20px 20px 30px;
+}
+
+h1 {
+    display: block;
+}
+
+.location {
+    display:flex;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 5px auto;
+}
+
+div.location > img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.description {
+    margin: 10px auto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.edit {
+    color: aquamarine;
+}
+
+.edit > img{
+    height: 20px;
+    margin-right: 10px;
+}
