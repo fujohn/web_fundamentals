@@ -12,4 +12,6 @@ function fizzbuzz() {
     }
 }
 
+console.log("I is now " + i);
+
 fizzbuzz()
