@@ -120,3 +120,35 @@ function message() {
 console.log("Start");
 setTimeout(message, 3000); // 3000 refers to lag in miliseconds, therefore 3 seconds
 console.log("End");
+
+var taco1 = {
+    "tortilla": "soft corn tortilla",
+    "protein":  "tinga chicken",
+    "cheese":   "cotija cheese",
+    "toppings": ["lettuce", "pico de gallo", "guacamole"],
+    "tacoInfo": function() {
+        console.log("Tortilla: " + taco1.tortilla);
+        console.log("Protein:  " + taco1.protein);
+        console.log("Cheese:   " + taco1.cheese);
+        console.log("Toppings: " + taco1.toppings);
+    }
+}
+    
+// we can now get all the delicious taco facts by
+taco1.tacoInfo(); // note we call this like a function because it is a function
+
+var taco1 = {
+    "tortilla": "soft corn tortilla",
+    "protein":  "tinga chicken",
+    "cheese":   "cotija cheese",
+    "toppings": ["lettuce", "pico de gallo", "guacamole"],
+    "tacoInfo": function() {
+        console.log("Tortilla: " + this.tortilla);
+        console.log("Protein:  " + this.protein);
+        console.log("Cheese:   " + this.cheese);
+        console.log("Toppings: " + this.toppings);
+    }
+}
+    
+// we can now still get all the delicious taco facts by
+taco1.tacoInfo(); // note tacoInfo still gets called like a function
