@@ -44,3 +44,17 @@ input[type="submit"] {
     vertical-align: baseline;
 
 }
+
+/* 
+checks screen width on media device as a conditional before applying style 
+<= 480 is generally phone
+<1024 is tablet
+else is pc
+*/
+@media only screen and (max-width: 480px){
+    /* we will set these stylings only if the device is a screen with a width of 480px or less */
+    .navbtn {
+        background-color: yellow;
+    }
+}
+
