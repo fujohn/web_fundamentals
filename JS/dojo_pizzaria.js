@@ -16,4 +16,4 @@ console.log(p2);
 console.log(Math.random());
 
 var p3 = pizzaOven('hand tossed', 'garlic paste', ['mozzarella'], ['sausage', 'mushroom', 'onions']);
-console.log(p3)
+console.log(p3);
