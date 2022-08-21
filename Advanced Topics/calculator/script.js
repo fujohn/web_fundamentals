@@ -1,5 +1,11 @@
+var start = true;
 var displayValue = '0';
 var storedValue = 0;
+var sign = 'null';
+
+console.log(document.querySelector('#display').innerText);
+
+
 function press(btn) {
     if (btn != '.') {
         if (displayValue === '0') {
@@ -20,22 +26,31 @@ function press(btn) {
             console.log(storedValue);
         }
     }
+    document.querySelector('#display').innerText = displayValue;
 }
 
 function setOP(symbol) {
-    if (symbol == '/') {
-        if (parseFloat(displayValue) != 0) {
-            storedValue /= parseFloat(displayValue);
+    sign = symbol;
+    console.log(sign);
+    if (start) {
+        storedValue = parseFloat(displayValue);
+        start = false;
+    } else {
+        if (sign == '/') {
+            if (parseFloat(displayValue) != 0) {
+                storedValue /= parseFloat(displayValue);
+            }
+        } else if (sign == '*') {
+            storedValue *= parseFloat(displayValue);
+        } else if (sign == '+') {
+            storedValue += parseFloat(displayValue);
+        } else if (sign == '-') {
+            storedValue -= parseFloat(displayValue);
         }
-    } else if (symbol == '*') {
-        storedValue *= parseFloat(displayValue);
-    } else if (symbol == '+') {
-        storedValue += parseFloat(displayValue);
-    } else if (symbol == '-') {
-        storedValue -= parseFloat(displayValue);
     }
     // storedValue = parseFloat(displayValue);
     displayValue = '0';
+    document.querySelector('#display').innerText = storedValue;
     // console.log(displayValue);
     // console.log(storedValue);
 }
@@ -43,8 +58,29 @@ function setOP(symbol) {
 function clr() {
     displayValue = '0';
     storedValue = 0;
+    console.log(displayValue);
+    console.log(storedValue);
+    start = true;
 }
 
 function calculate() {
-
+    console.log(storedValue + sign + displayValue + '=');
+    if (!sign) {
+        storedValue = parseFloat(displayValue);
+    }
+    if (sign == '/') {
+        if (parseFloat(displayValue) != 0) {
+            storedValue /= parseFloat(displayValue);
+        }
+    } else if (sign == '*') {
+        storedValue *= parseFloat(displayValue);
+    } else if (sign == '+') {
+        storedValue += parseFloat(displayValue);
+    } else if (sign == '-') {
+        storedValue -= parseFloat(displayValue);
+    }
+    displayValue = '0';
+    sign = null;
+    console.log(storedValue);
+    document.querySelector('#display').innerText = storedValue;
 }
